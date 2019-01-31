@@ -15,7 +15,7 @@ exports.config = {
   services: ['appium'],
   appium: {
     args: {
-      address: '127.0.0.1',
+      // address: '127.0.0.1',
       commandTimeout: '11000',
     },
   },

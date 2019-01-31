@@ -1,9 +1,9 @@
 const { config } = require('../wdio.conf');
 
-config.specs = ['./tests/*.js'];
+config.specs = ['./specs_mobile/*.js'];
 config.capabilities = [
   {
-    automationName: 'UiAutomator',
+    automationName: 'UiAutomator2',
     deviceName: 'Nexus_5_7.1.1',
     platformName: 'Android',
     platformVersion: '7.1.1',
