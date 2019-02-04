@@ -1,9 +1,7 @@
-class LoginPage {
-  constructor() {
-    this.inputEmailField = '~input-email';
-    this.inputPasswordField = '~input-password';
-    this.loginButton = '~button-LOGIN';
-  }
-}
+const loginPage = {
+  inputEmailField: '~input-email',
+  inputPasswordField: '~input-password',
+  loginButton: '~button-LOGIN',
+};
 
-module.exports = LoginPage;
+module.exports = loginPage;

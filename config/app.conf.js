@@ -1,5 +1,5 @@
 const path = require('path');
-const { config } = require('../wdio.shared.conf');
+const { config } = require('../wdio.conf.js');
 
 config.specs = ['./tests/*.js'];
 config.capabilities = [

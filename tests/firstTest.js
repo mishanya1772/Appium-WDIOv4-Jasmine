@@ -1,5 +1,5 @@
-const homePage = new (require('../pageObjects/homePage'))();
-const loginPage = new (require('../pageObjects/loginPage'))();
+const homePage = require('../pageObjects/homePage');
+const loginPage = require('../pageObjects/loginPage');
 const basicActions = new (require('../pageObjects/basicActions'))();
 const data = require('../testData/testData');
 

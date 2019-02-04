@@ -4,7 +4,7 @@
   "description": "Test project for automating simple banking application",
   "main": ".eslintrc.js",
   "scripts": {
-    "android.app": "wdio ./config/app.conf.js"
+    "app": "wdio ./config/app.conf.js"
   },
   "repository": {
     "type": "git",

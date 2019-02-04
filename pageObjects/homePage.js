@@ -1,7 +1,5 @@
-class HomePage {
-  constructor() {
-    this.loginButtonBar = '~Login';
-  }
-}
+const homePage = {
+  loginButtonBar: '~Login',
+};
 
-module.exports = HomePage;
+module.exports = homePage;

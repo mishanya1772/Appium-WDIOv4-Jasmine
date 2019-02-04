@@ -7,7 +7,6 @@ exports.config = {
   sync: true,
   logLevel: 'silent',
   deprecationWarnings: true,
-  bail: 0,
   baseUrl: 'http://localhost:4723/wd/hub',
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
@@ -16,11 +15,9 @@ exports.config = {
   services: ['appium'],
   appium: {
     args: {
-      // address: '0.0.0.0',
       commandTimeout: '11000',
     },
   },
-  // Default port for Appium
   port: 4723,
   maxInstances: 1,
 
