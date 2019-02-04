@@ -4,7 +4,7 @@
   "description": "appium",
   "main": "wdio.conf.js",
   "scripts": {
-    "mob": "wdio ./config/wdio.browser.js",
+    "mob": "wdio ./config/wdio.mobile.js",
     "desk": "wdio ./config/wdio.desktop.js"
   },
   "repository": {

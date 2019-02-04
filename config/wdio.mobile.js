@@ -1,6 +1,6 @@
 const { config } = require('../wdio.conf');
 
-config.specs = ['./specs_mobile/*.js'];
+config.specs = ['./specs/*.js'];
 config.capabilities = [
   {
     automationName: 'UiAutomator2',

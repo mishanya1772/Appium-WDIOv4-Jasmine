@@ -8,14 +8,13 @@ exports.config = {
   logLevel: 'silent',
   deprecationWarnings: false,
   bail: 0,
-  waitforTimeout: 10000,
+  waitforTimeout: 1000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   reporters: ['dot', 'spec'],
   services: ['appium'],
   appium: {
     args: {
-      // address: '127.0.0.1',
       commandTimeout: '11000',
     },
   },

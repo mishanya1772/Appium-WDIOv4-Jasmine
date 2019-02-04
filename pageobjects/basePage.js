@@ -1,13 +1,12 @@
 class Page {
   constructor() {
-    this.menuButton = '.octicon.octicon-three-bars.text-white';
-    this.desc_menuButton = '.octicon.octicon-three-bars.notification-indicator';
+    this.menuButton = '.js-details-target';
+    this.menuButtonMobile = '.octicon-three-bars.notification-indicator';
     this.loginButton = '[href="/login"]';
-    this.searchField = '.form-control.input-contrast.width-full';
-    this.desk_searchField = '[placeholder="Search or jump to…"]';
+    this.searchField = '.js-site-search-focus';
     this.angularProtractorLink = '[href="/angular/protractor"]';
-    this.viewAllReadmeMD = ':nth-child(8) > div.bubble-actions';
-    this.readmeFileLink = '[title="README.md"]';
+    this.readmeFileLink = '[href="/angular/protractor/blob/master/README.md"]';
+    this.usernameField = '[id="user[login]"]';
   }
 
   inputText(field, text) {
