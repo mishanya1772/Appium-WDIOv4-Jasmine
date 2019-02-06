@@ -1,7 +1,8 @@
 # Appium-project
 
 ### This project is for running a simple Appium tests together with WebdriverIO for:  
-    
+   
+* Android Chrome browser
 * Android Native Apps
 
 **FIRST STEP.** Install Appium on a local machine.  
@@ -50,7 +51,20 @@ After that, enter in terminal:
 
 * **npm i** 
 
-**FIFTH STEP.** Now you can run project. So, also enter
+**FIFTH STEP.** Now you can run project.   
 
-* **npm run android.app**
+For running tests in mobile browser, choose **appium** branch and run command:
+
+* **npm run mob**
  
+ For running tests in desktop browser, choose **appium** branch and run command:  
+ 
+ * **npm run desk**
+ 
+ For running tests for app, choose **appiumApp** branch and run command:    
+ 
+* **npm run app**
+
+
+
+
