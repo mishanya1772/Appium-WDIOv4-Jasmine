@@ -1,70 +1,34 @@
-# Appium-project
+# Sample project for running e2e tests on Desktop and Mobile device using webdriverIO + Appium   
 
-### This project is for running a simple Appium tests together with WebdriverIO for:  
-   
-* Android Chrome browser
-* Android Native Apps
-
-**FIRST STEP.** Install Appium on a local machine.  
-So, open terminal and enter:      
-
+### Install Appium on a local machine:  
 * **npm install appium-doctor -g**     
-// Appium-doctor - for diagnose and fix common Node, iOS and Android configuration issues before starting Appium.  
- * **npm install appium -g**     
- // Appium is cross-platform test automation tool for mobile web and apps    
+* **npm install appium -g**   
 
-Now, check the installed programs, enter command 
+### Check if the appium-doctor is installed correctly: 
+* **appium-doctor**  
 
-* **appium-doctor**.  
+### If you have a problem with **ANDROID_HOME**:
+* Download **Android Studio**: *https://developer.android.com/studio/*
+* Setup sdk: **export ANDROID_HOME=/"LINK TO YOUR ANDROID SDK"/Sdk** (e.g. export *ANDROID_HOME=/home/my.user/Android/Sdk* )
 
-You will see a **### Diagnostic for necessary dependencies starting ###**.  
-
-If will be a problem with **ANDROID_HOME**, you should download **android studio** from https://developer.android.com/studio/ link and enter command in terminal:  
-
-* **export ANDROID_HOME=/"LINK TO YOUR ANDROID SDK"/Sdk**  
-// for example: export ANDROID_HOME=/home/my.user/Android/Sdk
-And repeat the command: 
-
-* **appium-doctor**
-
-Then enter in terminal:   
-
+### Check if the appium is installed correctly: 
 * **appium**  
-
-You will see    
-
-* **[Appium] Welcome to Appium v1.10.1  
-   [Appium] Appium REST http interface listener started on 0.0.0.0:4723**  
-If will be a problem "command not found", then go to **/usr/local/bin/** and find file **appium**.
-After that, enter in terminal:  
-
-* **sudo chmod -R a+w /usr/local/bin/appium**
+* If you have "command not found" message, go to */usr/local/bin/* and add access:
+ **sudo chmod -R a+w /usr/local/bin/appium**
  
-**SECOND STEP.** Install emulator for your virtual device:     
-
-* It can be appium-desktop program ( https://github.com/appium/appium-desktop )
-* Or android studio ( https://github.com/webdriverio/appium-boilerplate/blob/v4/docs/ANDROID_IOS_SETUP.md )
+### Install emulator:     
+* It can be an appium-desktop program: *https://github.com/appium/appium-desktop*
+* Or android studio: *https://github.com/webdriverio/appium-boilerplate/blob/v4/docs/ANDROID_IOS_SETUP.md*
   
-**THIRD STEP.** Im emulator, configure the same device as in **/config/app.conf.js** file and run it.   
+### Setup dependencies:
+* Add emulator to config file: **/config/app.conf.js**
+* Install all dependencies: **npm i**
 
-**FOURTH STEP.** Into this project in terminal, enter
+### For running e2e tests in browser: For running tests in mobile browser, choose **appium** branch and
+* Choose **appium** branch 
+* Run mobile e2e tests: **npm run mob**
+* Run desktop e2e tests: **npm run desk**
 
-* **npm i** 
-
-**FIFTH STEP.** Now you can run project.   
-
-For running tests in mobile browser, choose **appium** branch and run command:
-
-* **npm run mob**
- 
- For running tests in desktop browser, choose **appium** branch and run command:  
- 
- * **npm run desk**
- 
- For running tests for app, choose **appiumApp** branch and run command:    
- 
-* **npm run app**
-
-
-
-
+### For running e2e tests in the application:
+* Choose **appiumApp** branch 
+* Run e2e tests: **npm run app**
