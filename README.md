@@ -9,7 +9,7 @@
 
 ### If you have a problem with **ANDROID_HOME**:
          • download Android Studio: https://developer.android.com/studio/
-         • setup sdk: export ANDROID_HOME=/"LINK TO YOUR ANDROID SDK"/Sdk (e.g.: export ANDROID_HOME=/home/my.user/Android/Sdk )
+         • setup sdk: export ANDROID_HOME=/home/{MyUser}/Android/Sdk 
 
 ### Check if the appium is installed correctly: 
          • appium  
