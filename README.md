@@ -1,5 +1,8 @@
 # Sample project for running e2e tests on Desktop and Mobile device using webdriverIO + Appium   
 
+### Presentation:
+         • https://slides.com/mishanyalepskiy/appium
+
 ### Install Appium on a local machine:  
          • npm install appium-doctor -g 
          • npm install appium -g   
